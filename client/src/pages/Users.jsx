@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import User from "../components/User";
+import Header from "../components/Header";
 
 export default function Users() {
   const [users, setUsers] = useState([]);
@@ -18,6 +19,7 @@ export default function Users() {
 
   return (
     <div>
+      <Header />
       <h1>USERS</h1>
       <div>{usersElement}</div>
     </div>

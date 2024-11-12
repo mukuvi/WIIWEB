@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Registered from "../components/Registered";
+import Header from "../components/Header";
 
 export default function Register() {
   const [formData, setFormData] = useState({
@@ -31,6 +32,8 @@ export default function Register() {
   }
   return (
     <div>
+      {" "}
+      <Header />
       <h1>Registration Form</h1>
       <form onSubmit={handleSubmit}>
         {/* <label htmlFor="fullname">Full Name</label> */}
@@ -71,7 +74,6 @@ export default function Register() {
         <br />
         <button>Submit</button>
       </form>
-
       {isRegistered && (
         <Registered fullName={formData.fullName} email={formData.email} />
       )}

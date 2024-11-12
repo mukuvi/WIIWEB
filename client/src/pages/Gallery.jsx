@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Header from "../components/Header";
 
 export default function Gallery() {
   const [photos, setPhotos] = useState({});
@@ -11,6 +12,7 @@ export default function Gallery() {
   console.log(photos);
   return (
     <div>
+      <Header />
       <p>{photos.title}</p>
       <img src={photos.thumbnailUrl} />
     </div>
