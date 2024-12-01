@@ -32,7 +32,6 @@ export default function Register() {
   }
   return (
     <div>
-      {" "}
       <Header />
       <h1>Registration Form</h1>
       <form onSubmit={handleSubmit}>
