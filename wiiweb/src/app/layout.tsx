@@ -27,11 +27,30 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header>
+        <header
+          style={{
+            backgroundColor: "coral",
+            color: "white",
+            padding: "15px 20px",
+            textAlign: "center",
+          }}
+        >
           <p>wiiweb</p>
         </header>
-        {children}
-        <p>all rights reserved</p>
+        <main>{children}</main>
+        <footer
+          style={{
+            backgroundColor: "#333",
+            color: "white",
+            textAlign: "center",
+            padding: "10px 20px",
+            position: "fixed",
+            width: "100%",
+            bottom: "0",
+          }}
+        >
+          <p>all rights reserved</p>
+        </footer>
       </body>
     </html>
   );
