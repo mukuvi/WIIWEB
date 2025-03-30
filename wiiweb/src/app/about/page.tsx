@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "About wiiweb",
+  title: "About",
 };
 
 import Link from "next/link";

@@ -13,7 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "WIIWEB",
+  title: {
+    default: "WIIWEB",
+    template: "%s | WIIWEB",
+  },
   description: "wiiweb search engine",
 };
 
