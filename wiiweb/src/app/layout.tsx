@@ -27,7 +27,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header>
+          <p>wiiweb</p>
+        </header>
         {children}
+        <p>all rights reserved</p>
       </body>
     </html>
   );
