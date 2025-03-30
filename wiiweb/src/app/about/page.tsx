@@ -1,4 +1,9 @@
+export const metadata = {
+  title: "About wiiweb",
+};
+
 import Link from "next/link";
+
 export default function about() {
   return (
     <div>
